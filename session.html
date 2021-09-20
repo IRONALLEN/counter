@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Session</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>counter</h1>
+        <p>{{session['visits']}} times visited</p>
+        <a class="button" href="/">Click</a> <a class="button" href="/destroy_session">Reset</a>
+        <a class="button" href="/+2">Plus 2</a>
+    </div>
+
+</body>
+
+</html>
